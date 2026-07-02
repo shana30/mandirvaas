@@ -1,0 +1,128 @@
+/* ============================================================
+   MandirVaas — Design Tokens
+   Palette drawn from temple materials: sindoor, turmeric,
+   sun-warmed stone, basalt, and tulsi leaf.
+   ============================================================ */
+:root {
+  /* Color */
+  --mv-maroon: #6b1420;        /* sindoor — primary, headers, nav */
+  --mv-maroon-dark: #4a0d16;
+  --mv-gold: #c9862b;          /* turmeric — accents, dividers, links */
+  --mv-gold-light: #e8b96a;
+  --mv-vermilion: #e1592c;     /* marigold — CTAs, active states */
+  --mv-stone: #fbf3e3;         /* temple stone cream — page background */
+  --mv-stone-dim: #f1e6cf;
+  --mv-basalt: #24303a;        /* dark slate — body text, dark sections */
+  --mv-tulsi: #3b5d4b;         /* secondary green — stays / nature track */
+  --mv-white: #fffaf2;
+
+  /* Type */
+  --font-display: 'Yatra One', serif;
+  --font-body: 'Work Sans', -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Layout */
+  --radius-sm: 4px;
+  --radius-md: 10px;
+  --max-width: 1180px;
+  --gopuram-tier: clamp(28px, 4vw, 48px);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--mv-stone);
+  color: var(--mv-basalt);
+  font-family: var(--font-body);
+  line-height: 1.55;
+}
+
+h1, h2, h3, .display {
+  font-family: var(--font-display);
+  color: var(--mv-maroon);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1.15;
+}
+
+a { color: var(--mv-maroon); text-decoration: none; }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+  outline: 3px solid var(--mv-vermilion);
+  outline-offset: 2px;
+}
+
+.mv-page { max-width: var(--max-width); margin: 0 auto; padding: 0 24px 96px; }
+.mv-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--mv-gold);
+}
+
+.mv-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: var(--radius-sm);
+  border: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.mv-btn-primary { background: var(--mv-vermilion); color: var(--mv-white); }
+.mv-btn-primary:hover { transform: translateY(-1px); box-shadow: 0 6px 18px rgba(225, 89, 44, 0.35); }
+.mv-btn-outline {
+  background: transparent;
+  color: var(--mv-maroon);
+  border: 1.5px solid var(--mv-maroon);
+}
+.mv-btn-outline:hover { background: var(--mv-maroon); color: var(--mv-white); }
+
+.mv-card {
+  background: var(--mv-white);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--mv-stone-dim);
+  overflow: hidden;
+}
+
+/* Signature divider — a stepped gopuram-tier silhouette between sections,
+   standing in for the generic hairline rule. */
+.mv-gopuram-divider {
+  height: var(--gopuram-tier);
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 2px;
+  margin: 56px 0;
+}
+.mv-gopuram-divider span {
+  background: var(--mv-gold);
+  opacity: 0.55;
+}
+.mv-gopuram-divider span:nth-child(1) { width: 60px; height: 40%; }
+.mv-gopuram-divider span:nth-child(2) { width: 60px; height: 65%; }
+.mv-gopuram-divider span:nth-child(3) { width: 60px; height: 100%; background: var(--mv-maroon); opacity: 0.8; }
+.mv-gopuram-divider span:nth-child(4) { width: 60px; height: 65%; }
+.mv-gopuram-divider span:nth-child(5) { width: 60px; height: 40%; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .mv-btn { transition: none; }
+}
+
+@media (max-width: 640px) {
+  .mv-gopuram-divider span { width: 34px; }
+}
+
+.mv-footer {
+  background: var(--mv-basalt);
+  color: var(--mv-stone);
+}
+.mv-footer .display { color: var(--mv-gold-light); }
