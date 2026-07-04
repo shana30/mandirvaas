@@ -1,0 +1,13 @@
+.mv-shop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 18px;
+}
+.mv-shop-card-image {
+  height: 130px;
+  background: var(--mv-stone-dim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--mv-maroon);
+}

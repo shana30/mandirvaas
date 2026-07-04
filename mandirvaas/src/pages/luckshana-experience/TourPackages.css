@@ -1,0 +1,22 @@
+.mv-package-list { display: flex; flex-direction: column; gap: 16px; }
+.mv-package-card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 20px 24px;
+  flex-wrap: wrap;
+}
+.mv-package-days {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--mv-stone-dim);
+  border-radius: var(--radius-sm);
+  padding: 10px 16px;
+  min-width: 64px;
+}
+.mv-package-days .mv-mono { font-size: 1.4rem; color: var(--mv-maroon); }
+.mv-package-days span:last-child { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; }
+.mv-package-body { flex: 1; min-width: 200px; }
+.mv-package-price { text-align: right; }
+.mv-package-price .mv-mono { font-size: 1.15rem; color: var(--mv-maroon); font-weight: 500; }

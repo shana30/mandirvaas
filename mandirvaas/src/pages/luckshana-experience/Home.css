@@ -1,0 +1,70 @@
+.mv-hero {
+  background: radial-gradient(ellipse at top, var(--mv-maroon-dark), var(--mv-basalt) 70%);
+  color: var(--mv-white);
+}
+.mv-hero-inner { padding-top: 72px; padding-bottom: 72px; text-align: center; }
+.mv-hero-title {
+  color: var(--mv-white);
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  margin: 14px 0 12px;
+  max-width: 760px;
+  margin-inline: auto;
+}
+.mv-hero-sub {
+  max-width: 520px;
+  margin: 0 auto 40px;
+  color: rgba(255, 250, 242, 0.75);
+}
+
+.mv-deity-selector {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.mv-deity-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 108px;
+  padding: 18px 8px;
+  background: rgba(251, 243, 227, 0.06);
+  border: 1.5px solid rgba(251, 243, 227, 0.18);
+  border-radius: var(--radius-md);
+  color: var(--mv-stone);
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+.mv-deity-tile-glyph {
+  width: 68px;
+  height: 84px;
+  border-radius: var(--radius-sm);
+  background: rgba(251, 243, 227, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--mv-white);
+  overflow: hidden;
+}
+.mv-deity-tile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+}
+.mv-deity-tile:hover { border-color: var(--mv-gold); }
+.mv-deity-tile.is-active {
+  background: rgba(200, 134, 43, 0.18);
+  border-color: var(--mv-gold);
+  box-shadow: 0 0 0 3px rgba(200, 134, 43, 0.15);
+}
+
+.mv-hero-cta-row {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
