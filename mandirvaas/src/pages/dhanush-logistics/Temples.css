@@ -1,0 +1,51 @@
+.mv-deity-filter {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+.mv-deity-chip {
+  background: var(--mv-white);
+  border: 1px solid var(--mv-stone-dim);
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--mv-maroon);
+  cursor: pointer;
+}
+.mv-deity-chip:hover { border-color: var(--mv-gold); background: var(--mv-stone-dim); }
+.mv-deity-chip span { font-family: var(--font-mono); color: var(--mv-gold); font-size: 0.75rem; margin-left: 4px; }
+
+.mv-temple-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+.mv-temple-card-image {
+  height: 140px;
+  position: relative;
+  overflow: hidden;
+}
+.mv-temple-card-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.mv-temple-card-deity-figure {
+  position: absolute;
+  right: 14px;
+  bottom: 0;
+  display: flex;
+  align-items: flex-end;
+  filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.35));
+}
+.mv-temple-card-body { padding: 16px; }
+.mv-temple-card-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--mv-tulsi);
+}
+.mv-mono { font-family: var(--font-mono); }

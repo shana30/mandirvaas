@@ -4,9 +4,22 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+<<<<<<< HEAD
     "dev": "vite --port 3000",
     "build": "vite build",
     "preview": "vite preview --port 3000"
+=======
+<<<<<<< HEAD
+    "dev": "vite --port 3000",
+    "build": "vite build",
+    "preview": "vite preview --port 3000"
+=======
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint ."
+>>>>>>> 12c86fc69c54a28a8c922a2d6606e0fda1653ccf
+>>>>>>> 90eda93e6743055ad33ebc1e831546e28b3bf3fe
   },
   "dependencies": {
     "react": "^18.3.1",

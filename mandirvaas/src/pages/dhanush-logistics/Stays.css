@@ -1,0 +1,11 @@
+.mv-stay-list { display: flex; flex-direction: column; gap: 14px; }
+.mv-stay-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 22px;
+  flex-wrap: wrap;
+}
+.mv-stay-price { display: flex; flex-direction: column; align-items: flex-end; }
+.mv-stay-price .mv-mono { font-size: 1.1rem; color: var(--mv-maroon); font-weight: 500; }

@@ -6,5 +6,16 @@ dist-ssr
 .env.*
 .DS_Store
 *.log
+<<<<<<< HEAD
 mandirvaas-frontend/node_modules
 mandirvaas-frontend/dist
+=======
+<<<<<<< HEAD
+mandirvaas-frontend/node_modules
+mandirvaas-frontend/dist
+=======
+npm-debug.log*
+.vscode/*
+!.vscode/extensions.json
+>>>>>>> 12c86fc69c54a28a8c922a2d6606e0fda1653ccf
+>>>>>>> 90eda93e6743055ad33ebc1e831546e28b3bf3fe
