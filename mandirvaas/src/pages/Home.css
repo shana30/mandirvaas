@@ -1,0 +1,73 @@
+.home-section { margin: 48px 0; }
+.home-section-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 18px; }
+.home-section-head h2 { margin: 0; }
+.home-section-link { font-size: 0.85rem; font-weight: 600; color: var(--mv-vermilion); }
+
+.deity-strip {
+  display: flex;
+  gap: 18px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+}
+.deity-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  flex: 0 0 auto;
+  cursor: pointer;
+}
+.deity-icon {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  color: var(--mv-white);
+  border: 2px solid transparent;
+  transition: border-color 0.15s ease;
+}
+.deity-item:hover .deity-icon { border-color: var(--mv-gold); }
+.deity-label { font-size: 0.8rem; font-weight: 600; color: var(--mv-basalt); }
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 18px;
+}
+.featured-card { overflow: hidden; display: flex; flex-direction: column; }
+.featured-card-art {
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.featured-card-art span.glyph { font-size: 2.2rem; color: rgba(255, 250, 242, 0.92); font-family: var(--font-display); }
+.featured-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: var(--mv-gold);
+  color: var(--mv-maroon-dark);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+.featured-card-body { padding: 14px 16px 16px; }
+.featured-card-body h3 { margin: 0 0 4px; font-size: 1.02rem; }
+.featured-card-body p { margin: 0; font-size: 0.8rem; color: var(--mv-gold); font-weight: 600; }
+
+.temple-grad-1 { background: linear-gradient(135deg, var(--mv-maroon), var(--mv-maroon-dark)); }
+.temple-grad-2 { background: linear-gradient(135deg, var(--mv-vermilion), var(--mv-maroon)); }
+.temple-grad-3 { background: linear-gradient(135deg, var(--mv-gold), var(--mv-vermilion)); }
+.temple-grad-4 { background: linear-gradient(135deg, var(--mv-basalt), var(--mv-maroon-dark)); }
+.temple-grad-5 { background: linear-gradient(135deg, var(--mv-gold-light), var(--mv-gold)); }
+.temple-grad-6 { background: linear-gradient(135deg, var(--mv-maroon-dark), var(--mv-basalt)); }

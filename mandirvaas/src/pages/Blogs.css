@@ -1,0 +1,66 @@
+.blogs-sub {
+  color: var(--mv-basalt);
+  opacity: 0.75;
+  max-width: 560px;
+  margin: -6px 0 28px;
+}
+
+.blogs-tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  background: rgba(255, 250, 242, 0.15);
+  color: var(--mv-white);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 700;
+  width: fit-content;
+}
+.blogs-tag-sm { background: var(--mv-stone-dim); color: var(--mv-maroon); }
+
+.blogs-featured {
+  position: relative;
+  min-height: 260px;
+  display: flex;
+  align-items: flex-end;
+  padding: 32px;
+  margin-bottom: 32px;
+  overflow: hidden;
+  border: none;
+}
+.blogs-featured-text { display: flex; flex-direction: column; gap: 10px; max-width: 620px; }
+.blogs-featured-title {
+  color: var(--mv-white);
+  margin: 0;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+}
+.blogs-featured-excerpt { color: rgba(255, 250, 242, 0.85); margin: 0; font-size: 0.95rem; }
+
+.blogs-meta {
+  display: flex;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: rgba(255, 250, 242, 0.7);
+}
+.blogs-meta-sm { color: var(--mv-basalt); opacity: 0.55; margin-top: 8px; }
+
+.blogs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.blog-card { overflow: hidden; }
+.blog-card-art { height: 120px; }
+.blog-card-body { padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 8px; }
+.blog-card-title { margin: 0; font-size: 1.02rem; line-height: 1.35; }
+
+.blog-grad-1 { background: linear-gradient(135deg, var(--mv-maroon), var(--mv-maroon-dark)); }
+.blog-grad-2 { background: linear-gradient(135deg, var(--mv-vermilion), var(--mv-maroon)); }
+.blog-grad-3 { background: linear-gradient(135deg, var(--mv-gold), var(--mv-vermilion)); }
+.blog-grad-4 { background: linear-gradient(135deg, var(--mv-basalt), var(--mv-maroon-dark)); }
+.blog-grad-5 { background: linear-gradient(135deg, var(--mv-gold-light), var(--mv-gold)); }
+.blog-grad-6 { background: linear-gradient(135deg, var(--mv-maroon-dark), var(--mv-basalt)); }
