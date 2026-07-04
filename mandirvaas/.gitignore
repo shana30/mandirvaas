@@ -1,0 +1,10 @@
+node_modules
+dist
+dist-ssr
+*.local
+.env
+.env.*
+.DS_Store
+*.log
+mandirvaas-frontend/node_modules
+mandirvaas-frontend/dist
